@@ -38,6 +38,10 @@ class GamePlayScene: SKScene {
     var userDevice = DeviceType.iPhone4s
     var backgroundImageWidth: CGFloat?
     var backgroundImageHeight: CGFloat?
+    var player: Hero?
+    var player2: Hero?
+    var titleMenu:SKNode = SKNode()
+
     
     
     override func didMoveToView(view: SKView) {
@@ -48,7 +52,7 @@ class GamePlayScene: SKScene {
         // Assing the width & height of the device to the optional values
         screenWidth = self.scene!.view!.bounds.width
         screenHeight = self.scene!.view!.bounds.height
-        
+        print("PlayScene")
         // Call the function determineTheUsersDevice(CGFloat, CGFloat) & pass in the screenWidth, and screenHeight
         determineTheUsersDevice(screenWidth!, deviceHeight: screenHeight!)
         
@@ -60,23 +64,50 @@ class GamePlayScene: SKScene {
         self.addChild(gameLayer1)
         gameLayer1.zPosition = -1
         
+        startAnimations()
         
-        // Call the function createGameBackgroundImages() which will add the background images in the Assets.xcassets folder
+        player?.xScale = 0.4
+        player?.yScale = 0.4
+        player2?.xScale = 0.5
+        player2?.yScale = 0.5
+        
+        //Call the function createGameBackgroundImages() which will add the background images in the Assets.xcassets folder
         createGameBackgroundImages()
     }
+    
     
     // MARK: TouchesBegan
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
         
-        /*
-        for touch in touches {
-            let location = touch.locationInNode(self)
-        }
-        */
+//        for touch in touches {
+//            let location = touch.locationInNode(self)
+//            
+//            
+//        }
         
+        self.transitionToGamePlay()
+        }
+    func transitionToGamePlay(){
+        let secondScene = GameScene(size: self.size)
+        let transition = SKTransition.fadeWithDuration(1.0)
+        secondScene.scaleMode = SKSceneScaleMode.AspectFill
+        self.scene!.view?.presentScene(secondScene, transition: transition)
+    
     }
-   
+    
+    func startAnimations(){
+        
+        //maybe have them running around and jumping
+        let blueAtlas = SKTextureAtlas(named: "BlueRunning")
+        let runningAnimation2 = SKAction.animateWithTextures([blueAtlas.textureNamed("1"),
+            blueAtlas.textureNamed("2"),
+            blueAtlas.textureNamed("3"),
+            blueAtlas.textureNamed("4")],
+            timePerFrame: 0.07)
+        
+//       GameScene.player2Running = SKAction.repeatActionForever(runningAnimation2)
+    }
     // MARK: Update
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
@@ -96,6 +127,34 @@ class GamePlayScene: SKScene {
         let layer1: SKSpriteNode = SKSpriteNode(imageNamed: "Layer1")
         layer1.size = CGSizeMake(backgroundImageWidth!, backgroundImageHeight!)
         gameLayer1.addChild(layer1)
+        
+        player = Hero(heroImage: "baseImage")
+        player?.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 100)
+        player?.physicsBody = SKPhysicsBody(circleOfRadius: 25)
+        player?.physicsBody?.affectedByGravity = true
+        player?.physicsBody?.restitution = 1
+        player?.physicsBody?.linearDamping = 0; //air friction
+        
+        player2 = Hero(heroImage: "1")
+        player2?.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 50)
+        
+        
+        
+        
+        
+        self.backgroundColor = SKColor(red: 0.15, green:0.15, blue:0.3, alpha: 1.0)
+        titleMenu = SKSpriteNode(imageNamed: "TitleScreen")
+        titleMenu.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) + 80)
+        titleMenu.name = "previousButton"
+        self.addChild(titleMenu)
+        
+        //platform.
+        let background: SKSpriteNode = SKSpriteNode(imageNamed: "BG")
+        background.size = CGSizeMake(screenWidth!, screenHeight!)
+       // gameLayer1.addChild(background)
+        
+        gameLayer1.addChild(player2!)
+        gameLayer1.addChild(player!)
         
         
     }

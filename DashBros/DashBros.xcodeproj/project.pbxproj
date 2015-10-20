@@ -12,10 +12,21 @@
 		6DE6FAFF1BD1EB54006245F8 /* GamePlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6FAFE1BD1EB54006245F8 /* GamePlayScene.swift */; };
 		6DE6FB011BD1EB54006245F8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6FB001BD1EB54006245F8 /* GameViewController.swift */; };
 		6DE6FB041BD1EB54006245F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE6FB021BD1EB54006245F8 /* Main.storyboard */; };
-		6DE6FB061BD1EB54006245F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE6FB051BD1EB54006245F8 /* Assets.xcassets */; };
 		6DE6FB091BD1EB54006245F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE6FB071BD1EB54006245F8 /* LaunchScreen.storyboard */; };
 		6DE6FB141BD1EB54006245F8 /* DashBrosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6FB131BD1EB54006245F8 /* DashBrosTests.swift */; };
 		6DE6FB1F1BD1EB55006245F8 /* DashBrosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6FB1E1BD1EB55006245F8 /* DashBrosUITests.swift */; };
+		E4F2DA711BD5E4620089F07D /* YellowDying.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E4F2DA691BD5E4620089F07D /* YellowDying.atlas */; settings = {ASSET_TAGS = (); }; };
+		E4F2DA721BD5E4620089F07D /* YellowRunning.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E4F2DA6A1BD5E4620089F07D /* YellowRunning.atlas */; settings = {ASSET_TAGS = (); }; };
+		E4F2DA731BD5E4620089F07D /* GreenDying.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E4F2DA6B1BD5E4620089F07D /* GreenDying.atlas */; settings = {ASSET_TAGS = (); }; };
+		E4F2DA741BD5E4620089F07D /* GreenRunning.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E4F2DA6C1BD5E4620089F07D /* GreenRunning.atlas */; settings = {ASSET_TAGS = (); }; };
+		E4F2DA751BD5E4620089F07D /* RedRunning.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E4F2DA6D1BD5E4620089F07D /* RedRunning.atlas */; settings = {ASSET_TAGS = (); }; };
+		E4F2DA761BD5E4620089F07D /* RedDying.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E4F2DA6E1BD5E4620089F07D /* RedDying.atlas */; settings = {ASSET_TAGS = (); }; };
+		E4F2DA771BD5E4620089F07D /* BlueDying.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E4F2DA6F1BD5E4620089F07D /* BlueDying.atlas */; settings = {ASSET_TAGS = (); }; };
+		E4F2DA781BD5E4620089F07D /* BlueRunning.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E4F2DA701BD5E4620089F07D /* BlueRunning.atlas */; settings = {ASSET_TAGS = (); }; };
+		E4F2DA7C1BD5E49A0089F07D /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2DA7A1BD5E49A0089F07D /* GameOver.swift */; settings = {ASSET_TAGS = (); }; };
+		E4F2DA7E1BD5E4DB0089F07D /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2DA7D1BD5E4DB0089F07D /* Hero.swift */; settings = {ASSET_TAGS = (); }; };
+		E4F2DA801BD5E4F40089F07D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2DA7F1BD5E4F40089F07D /* GameScene.swift */; settings = {ASSET_TAGS = (); }; };
+		E4F2DA821BD5ECF60089F07D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F2DA811BD5ECF60089F07D /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +53,6 @@
 		6DE6FAFE1BD1EB54006245F8 /* GamePlayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayScene.swift; sourceTree = "<group>"; };
 		6DE6FB001BD1EB54006245F8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		6DE6FB031BD1EB54006245F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6DE6FB051BD1EB54006245F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DE6FB081BD1EB54006245F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DE6FB0A1BD1EB54006245F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DE6FB0F1BD1EB54006245F8 /* DashBrosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashBrosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +61,18 @@
 		6DE6FB1A1BD1EB55006245F8 /* DashBrosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashBrosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE6FB1E1BD1EB55006245F8 /* DashBrosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBrosUITests.swift; sourceTree = "<group>"; };
 		6DE6FB201BD1EB55006245F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4F2DA691BD5E4620089F07D /* YellowDying.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = YellowDying.atlas; sourceTree = "<group>"; };
+		E4F2DA6A1BD5E4620089F07D /* YellowRunning.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = YellowRunning.atlas; sourceTree = "<group>"; };
+		E4F2DA6B1BD5E4620089F07D /* GreenDying.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GreenDying.atlas; sourceTree = "<group>"; };
+		E4F2DA6C1BD5E4620089F07D /* GreenRunning.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GreenRunning.atlas; sourceTree = "<group>"; };
+		E4F2DA6D1BD5E4620089F07D /* RedRunning.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedRunning.atlas; sourceTree = "<group>"; };
+		E4F2DA6E1BD5E4620089F07D /* RedDying.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedDying.atlas; sourceTree = "<group>"; };
+		E4F2DA6F1BD5E4620089F07D /* BlueDying.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BlueDying.atlas; sourceTree = "<group>"; };
+		E4F2DA701BD5E4620089F07D /* BlueRunning.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BlueRunning.atlas; sourceTree = "<group>"; };
+		E4F2DA7A1BD5E49A0089F07D /* GameOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		E4F2DA7D1BD5E4DB0089F07D /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		E4F2DA7F1BD5E4F40089F07D /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E4F2DA811BD5ECF60089F07D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/DashBros/DashBros/DashBros/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +123,19 @@
 		6DE6FAF91BD1EB54006245F8 /* DashBros */ = {
 			isa = PBXGroup;
 			children = (
+				E4F2DA691BD5E4620089F07D /* YellowDying.atlas */,
+				E4F2DA6A1BD5E4620089F07D /* YellowRunning.atlas */,
+				E4F2DA6B1BD5E4620089F07D /* GreenDying.atlas */,
+				E4F2DA6C1BD5E4620089F07D /* GreenRunning.atlas */,
+				E4F2DA6D1BD5E4620089F07D /* RedRunning.atlas */,
+				E4F2DA6E1BD5E4620089F07D /* RedDying.atlas */,
+				E4F2DA6F1BD5E4620089F07D /* BlueDying.atlas */,
+				E4F2DA701BD5E4620089F07D /* BlueRunning.atlas */,
 				6DE6FB2D1BD1ED00006245F8 /* SupportingFiles */,
 				6DE6FB2C1BD1ECF3006245F8 /* GameScenes */,
 				6DE6FB021BD1EB54006245F8 /* Main.storyboard */,
-				6DE6FB051BD1EB54006245F8 /* Assets.xcassets */,
 				6DE6FB071BD1EB54006245F8 /* LaunchScreen.storyboard */,
+				E4F2DA811BD5ECF60089F07D /* Assets.xcassets */,
 				6DE6FB0A1BD1EB54006245F8 /* Info.plist */,
 			);
 			path = DashBros;
@@ -133,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				6DE6FAFE1BD1EB54006245F8 /* GamePlayScene.swift */,
+				E4F2DA7F1BD5E4F40089F07D /* GameScene.swift */,
+				E4F2DA7A1BD5E49A0089F07D /* GameOver.swift */,
 			);
 			name = GameScenes;
 			sourceTree = "<group>";
@@ -140,9 +172,10 @@
 		6DE6FB2D1BD1ED00006245F8 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				6DE6FAFA1BD1EB54006245F8 /* AppDelegate.swift */,
 				6DE6FAFC1BD1EB54006245F8 /* GameScene.sks */,
+				6DE6FAFA1BD1EB54006245F8 /* AppDelegate.swift */,
 				6DE6FB001BD1EB54006245F8 /* GameViewController.swift */,
+				E4F2DA7D1BD5E4DB0089F07D /* Hero.swift */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -214,7 +247,7 @@
 				TargetAttributes = {
 					6DE6FAF61BD1EB54006245F8 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 76JQZ372UG;
+						DevelopmentTeam = 5H49Y5ZSG6;
 					};
 					6DE6FB0E1BD1EB54006245F8 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -252,9 +285,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DE6FAFD1BD1EB54006245F8 /* GameScene.sks in Resources */,
+				E4F2DA781BD5E4620089F07D /* BlueRunning.atlas in Resources */,
+				E4F2DA761BD5E4620089F07D /* RedDying.atlas in Resources */,
 				6DE6FB091BD1EB54006245F8 /* LaunchScreen.storyboard in Resources */,
-				6DE6FB061BD1EB54006245F8 /* Assets.xcassets in Resources */,
+				E4F2DA721BD5E4620089F07D /* YellowRunning.atlas in Resources */,
+				E4F2DA731BD5E4620089F07D /* GreenDying.atlas in Resources */,
+				E4F2DA751BD5E4620089F07D /* RedRunning.atlas in Resources */,
+				E4F2DA711BD5E4620089F07D /* YellowDying.atlas in Resources */,
+				E4F2DA771BD5E4620089F07D /* BlueDying.atlas in Resources */,
 				6DE6FB041BD1EB54006245F8 /* Main.storyboard in Resources */,
+				E4F2DA821BD5ECF60089F07D /* Assets.xcassets in Resources */,
+				E4F2DA741BD5E4620089F07D /* GreenRunning.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +322,10 @@
 			files = (
 				6DE6FAFF1BD1EB54006245F8 /* GamePlayScene.swift in Sources */,
 				6DE6FB011BD1EB54006245F8 /* GameViewController.swift in Sources */,
+				E4F2DA7C1BD5E49A0089F07D /* GameOver.swift in Sources */,
 				6DE6FAFB1BD1EB54006245F8 /* AppDelegate.swift in Sources */,
+				E4F2DA801BD5E4F40089F07D /* GameScene.swift in Sources */,
+				E4F2DA7E1BD5E4DB0089F07D /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,10 +468,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DashBros/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oneuppdev.DashBros;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -437,10 +483,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DashBros/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oneuppdev.DashBros;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -514,6 +562,7 @@
 				6DE6FB251BD1EB55006245F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DE6FB261BD1EB55006245F8 /* Build configuration list for PBXNativeTarget "DashBrosTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +571,7 @@
 				6DE6FB281BD1EB55006245F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DE6FB291BD1EB55006245F8 /* Build configuration list for PBXNativeTarget "DashBrosUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +580,7 @@
 				6DE6FB2B1BD1EB55006245F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
